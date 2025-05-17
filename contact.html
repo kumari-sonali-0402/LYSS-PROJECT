@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact - Mess Maintenance</title>
+  <link rel="stylesheet" href="cssstyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-image: url('https://st4.depositphotos.com/2903611/29109/i/450/depositphotos_291092974-stock-photo-man-touching-social-network-icons.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+ 
+      color: white;
+    }
+   
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5); 
+      z-index: -1;
+    }
+	
+	.contact-container h2 {
+  color: #ffd700; 
+}
+
+.contact-form label {
+  color: #ffd700;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🍽️ Mess Maintenance</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-banner">
+    <div class="overlay">
+      <h1>Contact Us</h1>
+    </div>
+  </section>
+
+  <main class="content">
+    <section class="contact-container">
+      <h2>Send Us a Message</h2>
+      <form action="contact_form.php" method="POST" class="contact-form" autocomplete="off">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mess Maintenance. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+

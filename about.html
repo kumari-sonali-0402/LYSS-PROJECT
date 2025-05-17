@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>About Us - Mess Maintenance</title>
+  <link rel="stylesheet" href="cssstyle.css" />
+  <style>
+    /* Blurred Background Image */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 1;
+      color: #1a237e;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background: url('https://media.istockphoto.com/id/1415614823/photo/modern-school-cafeteria-with-empty-seats-and-tables.jpg?s=612x612&w=0&k=20&c=o9Z3h37T0WDej2iZ1lYyMvsO-OkUOm5a_6M-6OJVIcI=') no-repeat center center;
+      background-size: cover;
+      filter: blur(6px);
+      opacity: 0.7;
+      z-index: -1;
+    }
+
+    /* Main Container */
+    .about-container {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 3rem 2rem;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #273F4F;
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #169976;
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+    }
+
+    /* Features Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .feature-box {
+      background:rgba(245, 40, 145, 0.18);
+      border-left: 4px solid #e53935;
+      padding: 1rem 1.2rem;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      color: #1a237e;
+      text-shadow: 1px 1px 1px rgba(255,255,255,0.4);
+    }
+
+    .feature-box:hover {
+      transform: translateY(-6px);
+      background: #F1E7E7;
+      color: #000;
+    }
+
+    .feature-box h3 {
+      margin-top: 0;
+      color: #48A6A7;
+    }
+
+    @media (max-width: 600px) {
+      .about-container {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-container">
+    <h1>About Our Mess Management System</h1>
+    <p>Welcome to GEC Vaishali mess management system! This platform is designed to help students and mess administrators manage meals, attendance, billing, and feedback seamlessly.</p>
+    <p>Our goal is to reduce paperwork, streamline operations, and ensure transparency in the mess process. The system is user-friendly and responsive, working well across devices.</p>
+
+    <div class="features">
+      <div class="feature-box">
+        <h3>Daily Meals</h3>
+        <p>View and manage daily menus along with nutritional information.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Attendance Tracking</h3>
+        <p>Check-in daily and maintain accurate attendance records.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Billing</h3>
+        <p>Auto-generate monthly bills based on meal attendance.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Feedback</h3>
+        <p>Share suggestions or complaints directly with the management.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
